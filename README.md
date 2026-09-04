@@ -2,20 +2,7 @@
 
 This is a small, Python-only version of the original `yt-compliance-rag` project.
 
-Original project:
-https://github.com/huzefa26/yt-compliance-rag
-
-## What was removed
-
-- Azure Video Indexer
-- Azure OpenAI
-- Azure AI Search
-- LangGraph
-- FastAPI
-- Azure monitoring
-- Cloud vector database
-
-## What is used instead
+## What is used
 
 - YouTube Transcript API -> gets available captions
 - pypdf -> reads the compliance PDFs
@@ -117,4 +104,4 @@ Output:
 ## Why this is smaller
 
 The original repository uses a LangGraph workflow with Azure services for video indexing, embeddings, vector search and LLM access. This version keeps the same high-level idea—video transcript -> RAG -> compliance decision—but implements it with local Python components. The original repository describes its architecture and Azure-based approach here:
-https://github.com/huzefa26/yt-compliance-rag
+
